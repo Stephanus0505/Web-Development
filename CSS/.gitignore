@@ -1,0 +1,17 @@
+# VS Code settings
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Node projects (when you start JS projects later)
+node_modules/
+dist/
+build/
+
+# Environment files (if you add API keys later)
+.env
