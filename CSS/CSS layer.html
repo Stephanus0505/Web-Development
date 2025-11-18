@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Z-index Layers Demo</title>
+
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            position: absolute;   /* needed to move on x, y, z axes */
+        }
+
+        /* Blue box (bottom layer) */
+        .box1 {
+            background-color: lightblue;
+            top: 50px;    /* Y-axis */
+            left: 50px;   /* X-axis */
+            z-index: 1;   /* Z-axis */
+        }
+
+        /* Yellow box (middle layer) */
+        .box2 {
+            background-color: yellow;
+            top: 90px;  
+            left: 90px;
+            z-index: 2;
+        }
+
+        /* Red box (top layer) */
+        .box3 {
+            background-color: lightcoral;
+            top: 130px;
+            left: 130px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+
+</body>
+</html>
